@@ -26,7 +26,12 @@ let numberArr = [3, 5, 8, 4, 9];
  * > [4, 6, 9, 5, 10]
  *
  */
-function plusOne() {}
+function plusOne(nums) {
+  let newArr = nums.map(el => {
+    return el + 1
+  })
+  return newArr;
+}
 
 /**
  *
@@ -50,7 +55,12 @@ function plusOne() {}
  * > [6, 10, 16, 8, 18]
  *
  */
-function timesTwo() {}
+function timesTwo(nums) {
+  let newArr = nums.map((el) => {
+    return el * 2;
+  })
+  return newArr;
+}
 
 /**
  *
