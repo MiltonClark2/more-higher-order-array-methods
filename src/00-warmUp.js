@@ -84,7 +84,14 @@ function timesTwo(nums) {
  * > [3, 5, 9]
  *
  */
-function filterForOdds() {}
+function filterForOdds(nums) {
+  let newArr = nums.filter((el)=>{
+    if(el%2 === 1){
+      return el;
+    }
+  })
+  return newArr;
+}
 
 /**
  *
