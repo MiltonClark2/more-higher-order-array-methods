@@ -129,7 +129,22 @@ function filterForOdds(nums) {
  * > [8, 4]
  *
  */
-function filterOddsOrEvens() {}
+function filterOddsOrEvens(nums, parity) {
+  if(parity.toLowerCase() === "even") {
+    return  nums.filter((el)=>{
+      if(el%2 === 0){
+        return el;
+        }
+      }) 
+    } 
+  if(parity.toLowerCase() === "odd"){
+    return nums.filter((el)=>{
+      if(el%2 === 1){
+        return el;
+      }
+    })
+  }
+}
 
 /**
  *
@@ -159,7 +174,13 @@ function filterOddsOrEvens() {}
  * > 9
  *
  */
-function findTargetNum() {}
+function findTargetNum(nums, targetNum) {
+   return nums.find((el)=>{
+    if(el === targetNum){
+      return el;
+    } 
+  })
+}
 
 /**
  *
